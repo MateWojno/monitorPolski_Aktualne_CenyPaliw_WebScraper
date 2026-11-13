@@ -27,7 +27,13 @@ An automated web scraping script designed to monitor and retrieve official annou
 Written in Python, the script requires the following external libraries:
 
 ```bash
-pip install requests beautifulsoup4 pypdf
+pip install -r requirements.txt
+```
+<br>
+
+Run program:
+```bash
+python mpws.py
 ```
 
 ## AI notice

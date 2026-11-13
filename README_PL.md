@@ -31,7 +31,9 @@ Skrypt napisany jest w języku Python. Do poprawnego działania wymagane są nas
 ```bash
 pip install -r requirements.txt
 ```
-<br>Uruchom program:
+<br>
+
+Uruchom program:
 ```bash
 python mpws.py
 ```
