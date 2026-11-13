@@ -2,7 +2,8 @@
 # @version  :   1.0.8
 # @author   :   matewojno
 # @purpouse :   homemade automation script
-
+# @todo     :   
+#           1.  split functions to other files
 from datetime import datetime
 from io import BytesIO
 import json
@@ -255,7 +256,7 @@ def pobierz_i_parsuj_monitor():
         match_nr = re.search(r'/2026/(\d+)', znaleziony_url)
         if match_nr:
             nowy_nr = int(match_nr.group(1))//50
-            nowy_nr = nowy_nr + 1
+            nowy_nr = nowy_nr + 1   #
             
             print(f" [+] Zapisano nowy numer {nowy_nr} \tdo pliku {PLIK_OSTATNI}")
             zapisz_ostatni_numer(nowy_nr)

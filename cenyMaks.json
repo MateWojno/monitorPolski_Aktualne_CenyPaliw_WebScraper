@@ -1,0 +1,14 @@
+{
+    "data_aktualizacji": "13 listopada 2026 r.",
+    "ceny": {
+        "Pb95": {
+            "brutto": 6.02
+        },
+        "Pb98": {
+            "brutto": 6.66
+        },
+        "ON": {
+            "brutto": 7.52
+        }
+    }
+}
