@@ -138,12 +138,10 @@ def pobierz_i_parsuj_monitor():
 
     # Budowanie dynamicznej listy URL-i:
     # 1. Strona główna Monitora Polskiego na pierwszym miejscu
-    # 2. Zakres wokół ostatniego numeru z pliku (np. ostatni + 3 w dół do ostatni - 3)
+    # 2. Zakres wokół ostatniego numeru z pliku (np. ostatni + 2)
     numery_do_sprawdzenia = [ostatni_nr]
-    for offset in range(1, 4):
+    for offset in range(1, 3):
         numery_do_sprawdzenia.append(ostatni_nr + offset)
-    for offset in range(1, 4):
-        numery_do_sprawdzenia.append(ostatni_nr - offset)
 
     # Usuwamy duplikaty, zachowując priorytet najnowszych (najwyższych numerów)
     numery_do_sprawdzenia = sorted(list(set([n for n in numery_do_sprawdzenia if n > 0])), reverse=True)
